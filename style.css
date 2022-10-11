@@ -1,0 +1,100 @@
+.body1 {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+.title1 {
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Overpass', sans-serif;
+    position: relative;
+    margin: 20px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    text-align: center;
+    height: 225px;
+    width: 225px;
+}
+
+.roomOne, .roomTwo, .roomThree, .roomFour, .roomFive, .roomSix {
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    background-color: lightblue;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    word-wrap: break-word;
+    margin: 5px;
+    width: 200px;
+    height: auto;
+    border: 2px solid black;
+}
+
+.textRoomOne {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.textRoomTwo {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.textRoomThree {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.textRoomFour {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.textRoomFive {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.textRoomSix {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.logs {
+    font-family: 'Overpass', sans-serif;
+    position: relative;
+}
+
+.logsTitle {
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 20px;    
+}
+
+.roomsContainer {
+    /* border: 3px solid black; */
+    text-align: center;
+    justify-content: center;
+}
+
+.subtitleText {
+    text-align: center;
+    font-family: "Overpass", "sans-serif";
+    font-size: 20px;
+    text-decoration: underline;
+}

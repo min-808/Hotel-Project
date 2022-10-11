@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <title>The Lakefront | Booking</title>
+</head>
+
+<body class="body1">
+
+    <div class="titleBox">
+        <p class="title1">The Lakefront</p>
+    </div>
+
+    <div>
+        <img class="logo" src="logo.png">
+    </div>
+
+    <hr noshade="noshade" class="horiLine1">
+    <p class="subtitleText">Assign your rooms here!</p>
+    <div class="roomsContainer">
+
+        <div class="roomOne">
+            <p class="textRoomOne">Room One</p>
+            <input type="text" id="roomOneEnter">
+            <button onclick="bookOne()" id='buttonBookOne'>Book</button>
+            <button onclick="lockOne()">Lock</button>
+            <button onclick="unlockOne()">Unlock</button>
+            <p></p>
+            <input type="text" id="roomOneRemove">
+            <button onclick="removeOne()">Remove</button>
+            <button onclick="removeAllOne()">Remove All</button>
+
+            <p id="placeOne"></p>
+        </div>
+
+        <div class="roomTwo">
+            <p class="textRoomTwo">Room Two</p>
+            <input type="text" id="roomTwoEnter">
+            <button onclick="bookTwo()" id="buttonBookTwo">Book</button>
+            <button onclick="lockTwo()">Lock</button>
+            <button onclick="unlockTwo()">Unlock</button>
+            <p></p>
+            <input type="text" id="roomTwoRemove">
+            <button onclick="removeTwo()">Remove</button>
+            <button onclick="removeAllTwo()">Remove All</button>
+
+            <p id="placeTwo"></p>
+        </div>
+
+        <div class="roomThree">
+            <p class="textRoomThree">Room Three</p>
+            <input type="text" id="roomThreeEnter">
+            <button onclick="bookThree()" id="buttonBookThree">Book</button>
+            <button onclick="lockThree()">Lock</button>
+            <button onclick="unlockThree()">Unlock</button>
+            <p></p>
+            <input type="text" id="roomThreeRemove">
+            <button onclick="removeThree()">Remove</button>
+            <button onclick="removeAllThree()">Remove All</button>
+
+            <p id="placeThree"></p>
+        </div>
+    
+        <div class="roomFour">
+            <p class="textRoomFour">Room Four</p>
+            <input type="text" id="roomFourEnter">
+            <button onclick="bookFour()" id="buttonBookFour">Book</button>
+            <button onclick="lockFour()">Lock</button>
+            <button onclick="unlockFour()">Unlock</button>
+            <p></p>
+            <input type="text" id="roomFourRemove">
+            <button onclick="removeFour()">Remove</button>
+            <button onclick="removeAllFour()">Remove All</button>
+
+            <p id="placeFour"></p>
+        </div>
+
+        <div class="roomFive">
+            <p class="textRoomFive">Room Five</p>
+            <input type="text" id="roomFiveEnter">
+            <button onclick="bookFive()" id="buttonBookFive">Book</button>
+            <button onclick="lockFive()">Lock</button>
+            <button onclick="unlockFive()">Unlock</button>
+            <p></p>
+            <input type="text" id="roomFiveRemove">
+            <button onclick="removeFive()">Remove</button>
+            <button onclick="removeAllFive()">Remove All</button>
+
+            <p id="placeFive"></p>
+        </div>
+
+        <div class="roomSix">
+            <p class="textRoomSix">Room Six</p>
+            <input type="text" id="roomSixEnter">
+            <button onclick="bookSix()" id="buttonBookSix">Book</button>
+            <button onclick="lockSix()">Lock</button>
+            <button onclick="unlockSix()">Unlock</button>
+            <p></p>
+            <input type="text" id="roomSixRemove">
+            <button onclick="removeSix()">Remove</button>
+            <button onclick="removeAllSix()">Remove All</button>
+
+            <p id="placeSix"></p>
+        </div>
+
+    </div>
+
+    <hr noshade="noshade" />
+
+    <div class="logs">
+        <p class="logsTitle">Logs</p>
+        <button onclick="clearLogs()">Clear Logs</button>
+        <p id="logsContent"></p>
+    </div>
+
+</body>
+</html>
