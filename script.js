@@ -8,7 +8,7 @@ var iSix = 0;
 function bookOne() {
     if (iOne <= 3) {
         var roomOneX = document.getElementById('roomOneEnter').value;
-        if (roomOneX != "") {
+        if (roomOneX != "" && roomOneX != " ") {
 
             var logsPOne = document.createElement('p');
             var logsNOne = document.createTextNode("Room One: " + roomOneX + " " + new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
@@ -74,7 +74,7 @@ function removeAllOne() {
 function bookTwo() {
     if (iTwo <= 3) {
         var roomTwoX = document.getElementById('roomTwoEnter').value;
-        if (roomTwoX != "") {
+        if (roomTwoX != "" && roomTwoX != " ") {
             var div = document.createElement('div');
 
             var logsPTwo = document.createElement('p');
@@ -139,7 +139,7 @@ function removeAllTwo() {
 function bookThree() {
     if (iThree <= 3) {
         var roomThreeX = document.getElementById('roomThreeEnter').value;
-        if (roomThreeX != "") {
+        if (roomThreeX != "" && roomThreeX != " ") {
             var div = document.createElement('div');
 
             var logsPThree = document.createElement('p');
@@ -204,7 +204,7 @@ function removeAllThree() {
 function bookFour() {
     if (iFour <= 3) {
         var roomFourX = document.getElementById('roomFourEnter').value;
-        if (roomFourX != "") {
+        if (roomFourX != "" && roomFourX != " ") {
             var div = document.createElement('div');
 
             var logsPFour = document.createElement('p');
@@ -269,7 +269,7 @@ function removeAllFour() {
 function bookFive() {
     if (iFive <= 3) {
         var roomFiveX = document.getElementById('roomFiveEnter').value;
-        if (roomFiveX != "") {
+        if (roomFiveX != "" && roomFiveX != " ") {
             var div = document.createElement('div');
 
             var logsPFive = document.createElement('p');
@@ -334,7 +334,7 @@ function removeAllFive() {
 function bookSix() {
     if (iSix <= 3) {
         var roomSixX = document.getElementById('roomSixEnter').value;
-        if (roomSixX != "") {
+        if (roomSixX != "" && roomSixX != " ") {
             var div = document.createElement('div');
 
             var logsPSix = document.createElement('p');
