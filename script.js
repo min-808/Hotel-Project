@@ -32,7 +32,7 @@ function bookOne() {
             document.getElementById("placeOne").appendChild(div);
             
             iOne++;
-            window.alert(roomOneX + " has been booked into Room One!");
+            document.getElementById("oneCounter").innerHTML = iOne;
 
             document.getElementById('roomOneEnter').value = "";
         }
@@ -56,17 +56,19 @@ function unlockOne() {
 }
 
 function removeOne() {
-    var oneY = document.getElementById('roomOneRemove').value;
-    var oneE = document.getElementById(oneY);
-    oneE.parentElement.removeChild(oneE);
+    var oneY = document.getElementById('roomOneEnter').value;
+    var oneE = document.getElementById("placeOne");
+    oneE.querySelector("#" + oneY).remove();
     iOne--;
-    document.getElementById('roomOneRemove').value = "";
+    document.getElementById("oneCounter").innerHTML = iOne;
+    document.getElementById('roomOneEnter').value = "";
 }
 
 function removeAllOne() {
     var oneA = document.getElementById("placeOne");
     oneA.innerHTML = "";
     iOne = 0;
+    document.getElementById("oneCounter").innerHTML = iOne;
 }
 
 function bookTwo() {
@@ -95,7 +97,7 @@ function bookTwo() {
             document.getElementById("placeTwo").appendChild(div);
             
             iTwo++;
-            window.alert(roomTwoX + " has been booked into Room Two!");
+            document.getElementById("twoCounter").innerHTML = iTwo;
 
             document.getElementById('roomTwoEnter').value = "";
         }
@@ -119,17 +121,19 @@ function unlockTwo() {
 }
 
 function removeTwo() {
-    var twoY = document.getElementById('roomTwoRemove').value;
-    var twoE = document.getElementById(twoY);
-    twoE.parentElement.removeChild(twoE);
+    var twoY = document.getElementById('roomTwoEnter').value;
+    var twoE = document.getElementById("placeTwo");
+    twoE.querySelector("#" + twoY).remove();
     iTwo--;
-    document.getElementById('roomTwoRemove').value = "";
+    document.getElementById("twoCounter").innerHTML = iTwo;
+    document.getElementById('roomTwoEnter').value = "";
 }
 
 function removeAllTwo() {
     var twoA = document.getElementById("placeTwo");
     twoA.innerHTML = "";
     iTwo = 0;
+    document.getElementById("twoCounter").innerHTML = iTwo;
 }
 
 function bookThree() {
@@ -158,7 +162,7 @@ function bookThree() {
             document.getElementById("placeThree").appendChild(div);
             
             iThree++;
-            window.alert(roomThreeX + " has been booked into Room Three!");
+            document.getElementById("threeCounter").innerHTML = iThree;
 
             document.getElementById('roomThreeEnter').value = "";
         }
@@ -182,17 +186,19 @@ function unlockThree() {
 }
 
 function removeThree() {
-    var threeY = document.getElementById('roomThreeRemove').value;
-    var threeE = document.getElementById(threeY);
-    threeE.parentElement.removeChild(threeE);
+    var threeY = document.getElementById('roomThreeEnter').value;
+    var threeE = document.getElementById("placeThree");
+    threeE.querySelector("#" + threeY).remove();
     iThree--;
-    document.getElementById('roomThreeRemove').value = "";
+    document.getElementById("threeCounter").innerHTML = iThree;
+    document.getElementById('roomThreeEnter').value = "";
 }
 
 function removeAllThree() {
     var threeA = document.getElementById("placeThree");
     threeA.innerHTML = "";
     iThree = 0;
+    document.getElementById("threeCounter").innerHTML = iThree;
 }
 
 function bookFour() {
@@ -221,7 +227,7 @@ function bookFour() {
             document.getElementById("placeFour").appendChild(div);
             
             iFour++;
-            window.alert(roomFourX + " has been booked into Room Four!");
+            document.getElementById("fourCounter").innerHTML = iFour;
 
             document.getElementById('roomFourEnter').value = "";
         }
@@ -245,17 +251,19 @@ function unlockFour() {
 }
 
 function removeFour() {
-    var fourY = document.getElementById('roomFourRemove').value;
-    var fourE = document.getElementById(fourY);
-    fourE.parentElement.removeChild(fourE);
+    var fourY = document.getElementById('roomFourEnter').value;
+    var fourE = document.getElementById("placeFour");
+    fourE.querySelector("#" + fourY).remove();
     iFour--;
-    document.getElementById('roomFourRemove').value = "";
+    document.getElementById("fourCounter").innerHTML = iFour;
+    document.getElementById('roomFourEnter').value = "";
 }
 
 function removeAllFour() {
     var fourA = document.getElementById("placeFour");
     fourA.innerHTML = "";
     iFour = 0;
+    document.getElementById("fourCounter").innerHTML = iFour;
 }
 
 function bookFive() {
@@ -284,7 +292,7 @@ function bookFive() {
             document.getElementById("placeFive").appendChild(div);
             
             iFive++;
-            window.alert(roomFiveX + " has been booked into Room Five!");
+            document.getElementById("fiveCounter").innerHTML = iFive;
 
             document.getElementById('roomFiveEnter').value = "";
         }
@@ -308,17 +316,19 @@ function unlockFive() {
 }
 
 function removeFive() {
-    var fiveY = document.getElementById('roomFiveRemove').value;
-    var fiveE = document.getElementById(fiveY);
-    fiveE.parentElement.removeChild(fiveE);
+    var fiveY = document.getElementById('roomFiveEnter').value;
+    var fiveE = document.getElementById("placeFive");
+    fiveE.querySelector("#" + fiveY).remove();
     iFive--;
-    document.getElementById('roomFiveRemove').value = "";
+    document.getElementById("fiveCounter").innerHTML = iFive;
+    document.getElementById('roomFiveEnter').value = "";
 }
 
 function removeAllFive() {
     var fiveA = document.getElementById("placeFive");
     fiveA.innerHTML = "";
     iFive = 0;
+    document.getElementById("fiveCounter").innerHTML = iFive;
 }
 
 function bookSix() {
@@ -347,7 +357,7 @@ function bookSix() {
             document.getElementById("placeSix").appendChild(div);
             
             iSix++;
-            window.alert(roomSixX + " has been booked into Room Six!");
+            document.getElementById("sixCounter").innerHTML = iSix;
 
             document.getElementById('roomSixEnter').value = "";
         }
@@ -371,17 +381,19 @@ function unlockSix() {
 }
 
 function removeSix() {
-    var sixY = document.getElementById('roomSixRemove').value;
-    var sixE = document.getElementById(sixY);
-    sixE.parentElement.removeChild(sixE);
+    var sixY = document.getElementById('roomSixEnter').value;
+    var sixE = document.getElementById("placeSix");
+    sixE.querySelector("#" + sixY).remove();
     iSix--;
-    document.getElementById('roomSixRemove').value = "";
+    document.getElementById("sixCounter").innerHTML = iSix;
+    document.getElementById('roomSixEnter').value = "";
 }
 
 function removeAllSix() {
     var sixA = document.getElementById("placeSix");
     sixA.innerHTML = "";
     iSix = 0;
+    document.getElementById("sixCounter").innerHTML = iSix;
 }
 
    function clearLogs() {

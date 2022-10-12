@@ -33,47 +33,19 @@
     display: inline-block;
     vertical-align: top;
     word-wrap: break-word;
-    margin: 5px;
+    margin: 8px;
     width: 200px;
     height: auto;
-    border: 2px solid black;
+    border: 2px solid rgb(117, 117, 117);
 }
 
-.textRoomOne {
+.textRoomOne, .textRoomTwo, .textRoomThree, .textRoomFour, .textRoomFive, .textRoomSix {
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
+    font-size: 20px;
 }
 
-.textRoomTwo {
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.textRoomThree {
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.textRoomFour {
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.textRoomFive {
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.textRoomSix {
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bold;
-}
 
 .logs {
     font-family: 'Overpass', sans-serif;
@@ -82,8 +54,8 @@
 
 .logsTitle {
     font-family: 'Overpass', sans-serif;
-    font-weight: bold;
     font-size: 20px;    
+    text-decoration: underline;
 }
 
 .roomsContainer {
@@ -92,11 +64,45 @@
     justify-content: center;
 }
 
-.subtitleText {
+.welcomeText {
     text-align: center;
     font-family: "Overpass", "sans-serif";
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: underline;
 }
 
-/* balls */
+.subtitleText {
+    text-align: center;
+    font-family: "Overpass", "sans-serif";
+    font-size: 24px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}
+
+#roomOneEnter, #unlockButton, #roomTwoEnter, #unlockButtonTwo, #roomThreeEnter, #unlockButtonThree, #roomFourEnter, #unlockButtonFour, #roomFiveEnter, #unlockButtonFive, #roomSixEnter, #unlockButtonSix {
+    margin-bottom: 5px;
+}
+
+#removeButton, #removeButtonTwo, #removeButtonThree, #removeButtonFour, #removeButtonFive, #removeButtonSix {
+    margin-bottom: 20px;
+}
+
+button:hover {
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;
+}
+
+@keyframes fadeIn {
+    0% {
+        background-color: white;
+    } 
+    100% {
+        background-color: rgb(230, 230, 230);
+    }
+}

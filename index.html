@@ -24,91 +24,93 @@
     </div>
 
     <hr noshade="noshade" class="horiLine1">
+    <p class="welcomeText">Welcome to the booking page</p>
     <p class="subtitleText">Assign your rooms here!</p>
+
     <div class="roomsContainer">
 
         <div class="roomOne">
             <p class="textRoomOne">Room One</p>
-            <input type="text" id="roomOneEnter">
+            <span id="oneCounter">0</span>/4
+            <br /> <br />
+            <input type="text" id="roomOneEnter" placeholder="Enter a name">
             <button onclick="bookOne()" id='buttonBookOne'>Book</button>
             <button onclick="lockOne()">Lock</button>
-            <button onclick="unlockOne()">Unlock</button>
-            <p></p>
-            <input type="text" id="roomOneRemove">
-            <button onclick="removeOne()">Remove</button>
+            <button onclick="unlockOne()" id="unlockButton">Unlock</button>
+            <button onclick="removeOne()" id="removeButton">Remove</button>
             <button onclick="removeAllOne()">Remove All</button>
 
-            <p id="placeOne"></p>
+            <div id="placeOne"></div>
         </div>
 
         <div class="roomTwo">
             <p class="textRoomTwo">Room Two</p>
-            <input type="text" id="roomTwoEnter">
+            <span id="twoCounter">0</span>/4
+            <br /> <br />
+            <input type="text" id="roomTwoEnter" placeholder="Enter a name">
             <button onclick="bookTwo()" id="buttonBookTwo">Book</button>
             <button onclick="lockTwo()">Lock</button>
-            <button onclick="unlockTwo()">Unlock</button>
-            <p></p>
-            <input type="text" id="roomTwoRemove">
-            <button onclick="removeTwo()">Remove</button>
+            <button onclick="unlockTwo()" id="unlockButtonTwo">Unlock</button>
+            <button onclick="removeTwo()" id="removeButtonTwo">Remove</button>
             <button onclick="removeAllTwo()">Remove All</button>
 
-            <p id="placeTwo"></p>
+            <div id="placeTwo"></div>
         </div>
 
         <div class="roomThree">
             <p class="textRoomThree">Room Three</p>
-            <input type="text" id="roomThreeEnter">
+            <span id="threeCounter">0</span>/4
+            <br /> <br />
+            <input type="text" id="roomThreeEnter" placeholder="Enter a name">
             <button onclick="bookThree()" id="buttonBookThree">Book</button>
             <button onclick="lockThree()">Lock</button>
-            <button onclick="unlockThree()">Unlock</button>
-            <p></p>
-            <input type="text" id="roomThreeRemove">
-            <button onclick="removeThree()">Remove</button>
+            <button onclick="unlockThree()" id="unlockButtonThree">Unlock</button>
+            <button onclick="removeThree()" id="removeButtonThree">Remove</button>
             <button onclick="removeAllThree()">Remove All</button>
 
-            <p id="placeThree"></p>
+            <div id="placeThree"></div>
         </div>
     
         <div class="roomFour">
             <p class="textRoomFour">Room Four</p>
-            <input type="text" id="roomFourEnter">
+            <span id="fourCounter">0</span>/4
+            <br /> <br />
+            <input type="text" id="roomFourEnter" placeholder="Enter a name">
             <button onclick="bookFour()" id="buttonBookFour">Book</button>
             <button onclick="lockFour()">Lock</button>
-            <button onclick="unlockFour()">Unlock</button>
-            <p></p>
-            <input type="text" id="roomFourRemove">
-            <button onclick="removeFour()">Remove</button>
+            <button onclick="unlockFour()" id="unlockButtonFour">Unlock</button>
+            <button onclick="removeFour()" id="removeButtonFour">Remove</button>
             <button onclick="removeAllFour()">Remove All</button>
 
-            <p id="placeFour"></p>
+            <div id="placeFour"></div>
         </div>
 
         <div class="roomFive">
             <p class="textRoomFive">Room Five</p>
-            <input type="text" id="roomFiveEnter">
+            <span id="fiveCounter">0</span>/4
+            <br /> <br />
+            <input type="text" id="roomFiveEnter" placeholder="Enter a name">
             <button onclick="bookFive()" id="buttonBookFive">Book</button>
             <button onclick="lockFive()">Lock</button>
-            <button onclick="unlockFive()">Unlock</button>
-            <p></p>
-            <input type="text" id="roomFiveRemove">
-            <button onclick="removeFive()">Remove</button>
+            <button onclick="unlockFive()" id="unlockButtonFive">Unlock</button>
+            <button onclick="removeFive()" id="removeButtonFive">Remove</button>
             <button onclick="removeAllFive()">Remove All</button>
 
-            <p id="placeFive"></p>
+            <div id="placeFive"></div>
         </div>
 
         <div class="roomSix">
             <p class="textRoomSix">Room Six</p>
-            <input type="text" id="roomSixEnter">
+            <span id="sixCounter">0</span>/4
+            <br /> <br />
+            <input type="text" id="roomSixEnter" placeholder="Enter a name">
             <button onclick="bookSix()" id="buttonBookSix">Book</button>
             <button onclick="lockSix()">Lock</button>
-            <button onclick="unlockSix()">Unlock</button>
-            <p></p>
-            <input type="text" id="roomSixRemove">
-            <button onclick="removeSix()">Remove</button>
+            <button onclick="unlockSix()" id="unlockButtonSix">Unlock</button>
+            <button onclick="removeSix()" id="removeButtonSix">Remove</button>
             <button onclick="removeAllSix()">Remove All</button>
 
-            <p id="placeSix"></p>
+            <div id="placeSix"></div>
         </div>
 
     </div>
