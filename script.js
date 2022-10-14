@@ -11,7 +11,7 @@ function bookOne() {
         if (roomOneX != "" && roomOneX != " ") {
 
             var logsPOne = document.createElement('p');
-            var logsNOne = document.createTextNode("Room One: " + roomOneX + " " + new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var logsNOne = document.createTextNode("Room One: " + roomOneX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPOne.appendChild(logsNOne);
             document.getElementById('logsContent').appendChild(logsPOne);
 
@@ -23,7 +23,7 @@ function bookOne() {
             personOne.appendChild(text1One);
 
             var dateOne = document.createElement('p');
-            var text2One = document.createTextNode(new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var text2One = document.createTextNode((new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             dateOne.appendChild(text2One);
 
             div.appendChild(personOne);
@@ -78,7 +78,7 @@ function bookTwo() {
             var div = document.createElement('div');
 
             var logsPTwo = document.createElement('p');
-            var logsNTwo = document.createTextNode("Room Two: " + roomTwoX + " " + new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var logsNTwo = document.createTextNode("Room Two: " + roomTwoX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPTwo.appendChild(logsNTwo);
             document.getElementById('logsContent').appendChild(logsPTwo);
 
@@ -88,7 +88,7 @@ function bookTwo() {
             personTwo.appendChild(text1Two);
 
             var dateTwo = document.createElement('p');
-            var text2Two = document.createTextNode(new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var text2Two = document.createTextNode((new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             dateTwo.appendChild(text2Two);
 
             div.appendChild(personTwo);
@@ -143,7 +143,7 @@ function bookThree() {
             var div = document.createElement('div');
 
             var logsPThree = document.createElement('p');
-            var logsNThree = document.createTextNode("Room Three: " + roomThreeX + " " + new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var logsNThree = document.createTextNode("Room Three: " + roomThreeX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPThree.appendChild(logsNThree);
             document.getElementById('logsContent').appendChild(logsPThree);
 
@@ -153,7 +153,7 @@ function bookThree() {
             personThree.appendChild(text1Three);
 
             var dateThree = document.createElement('p');
-            var text2Three = document.createTextNode(new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var text2Three = document.createTextNode((new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             dateThree.appendChild(text2Three);
 
             div.appendChild(personThree);
@@ -208,7 +208,7 @@ function bookFour() {
             var div = document.createElement('div');
 
             var logsPFour = document.createElement('p');
-            var logsNFour = document.createTextNode("Room Four: " + roomFourX + " " + new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var logsNFour = document.createTextNode("Room Four: " + roomFourX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPFour.appendChild(logsNFour);
             document.getElementById('logsContent').appendChild(logsPFour);
 
@@ -218,7 +218,7 @@ function bookFour() {
             personFour.appendChild(text1Four);
 
             var dateFour = document.createElement('p');
-            var text2Four = document.createTextNode(new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var text2Four = document.createTextNode((new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             dateFour.appendChild(text2Four);
 
             div.appendChild(personFour);
@@ -273,7 +273,7 @@ function bookFive() {
             var div = document.createElement('div');
 
             var logsPFive = document.createElement('p');
-            var logsNFive = document.createTextNode("Room Five: " + roomFiveX + " " + new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var logsNFive = document.createTextNode("Room Five: " + roomFiveX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPFive.appendChild(logsNFive);
             document.getElementById('logsContent').appendChild(logsPFive);
 
@@ -283,7 +283,7 @@ function bookFive() {
             personFive.appendChild(text1Five);
 
             var dateFive = document.createElement('p');
-            var text2Five = document.createTextNode(new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var text2Five = document.createTextNode((new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             dateFive.appendChild(text2Five);
 
             div.appendChild(personFive);
@@ -338,7 +338,7 @@ function bookSix() {
             var div = document.createElement('div');
 
             var logsPSix = document.createElement('p');
-            var logsNSix = document.createTextNode("Room Six: " + roomSixX + " " + new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var logsNSix = document.createTextNode("Room Six: " + roomSixX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPSix.appendChild(logsNSix);
             document.getElementById('logsContent').appendChild(logsPSix);
 
@@ -348,7 +348,7 @@ function bookSix() {
             personSix.appendChild(text1Six);
 
             var dateSix = document.createElement('p');
-            var text2Six = document.createTextNode(new Date().getMonth() + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
+            var text2Six = document.createTextNode((new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             dateSix.appendChild(text2Six);
 
             div.appendChild(personSix);
