@@ -7,30 +7,41 @@ var iSix = 0;
 
 function bookOne() {
     if (iOne <= 3) {
-        var roomOneX = document.getElementById('roomOneEnter').value;
+        // roomOneX is the person's name and what is going to display on screen
+        var trimmedOne = (document.getElementById('roomOneEnter').value).trim();
+        var roomOneX = trimmedOne[0].toUpperCase() + trimmedOne.substring(1);
+
+        // fixedIdOne is the person's name but converted to an id-friendly style (all caps, spaces are underscores)
+        var fixedIdOne = (roomOneX.replaceAll(' ', '_')).toUpperCase();
         if (roomOneX != "" && roomOneX != " ") {
 
+            // Makes the paragraph element with the name date and adds it to the log
             var logsPOne = document.createElement('p');
             var logsNOne = document.createTextNode("Room One: " + roomOneX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPOne.appendChild(logsNOne);
             document.getElementById('logsContent').appendChild(logsPOne);
 
+            // Makes the person's div element
             var div = document.createElement('div');
 
+            // Makes a paragraph element with the name
             var personOne = document.createElement('p');
             var text1One = document.createTextNode(roomOneX);
             personOne.style.fontWeight = 'bold';
             personOne.appendChild(text1One);
 
+            // Makes a paragraph element with just the date
             var dateOne = document.createElement('p');
             var text2One = document.createTextNode((new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             dateOne.appendChild(text2One);
 
+            // Appends both paragraph elements to the parent div (can't have spaces so underscore replaced)
             div.appendChild(personOne);
             div.appendChild(dateOne);
-            div.setAttribute("id", roomOneX);
+            div.setAttribute("id", fixedIdOne);
             document.getElementById("placeOne").appendChild(div);
             
+            // Incremenets the counter by one
             iOne++;
             document.getElementById("oneCounter").innerHTML = iOne;
 
@@ -56,9 +67,18 @@ function unlockOne() {
 }
 
 function removeOne() {
-    var oneY = document.getElementById('roomOneEnter').value;
+    // Trims the text box so there's no left and right white spaces
+    var trimmedRemoveOne = (document.getElementById('roomOneEnter').value).trim();
+    // Makes the first letter capitalized
+    var oneY = trimmedRemoveOne[0].toUpperCase() + trimmedRemoveOne.substring(1);
+
+    // Fixes the value so that the ID is in all caps and spaces are replaced with underscores
+    var fixedIdRemoveOne = (oneY.replaceAll(' ', '_')).toUpperCase();
+
+    // Uses query selector and .remove() to remove the child from the div parent
     var oneE = document.getElementById("placeOne");
-    oneE.querySelector("#" + oneY).remove();
+    oneE.querySelector("#" + fixedIdRemoveOne).remove();
+    // Subtracts by one
     iOne--;
     document.getElementById("oneCounter").innerHTML = iOne;
     document.getElementById('roomOneEnter').value = "";
@@ -73,14 +93,18 @@ function removeAllOne() {
 
 function bookTwo() {
     if (iTwo <= 3) {
-        var roomTwoX = document.getElementById('roomTwoEnter').value;
+        var trimmedTwo = (document.getElementById('roomTwoEnter').value).trim();
+        var roomTwoX = trimmedTwo[0].toUpperCase() + trimmedTwo.substring(1);
+        
+        var fixedIdTwo = (roomTwoX.replaceAll(' ', '_')).toUpperCase();
         if (roomTwoX != "" && roomTwoX != " ") {
-            var div = document.createElement('div');
 
             var logsPTwo = document.createElement('p');
             var logsNTwo = document.createTextNode("Room Two: " + roomTwoX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPTwo.appendChild(logsNTwo);
             document.getElementById('logsContent').appendChild(logsPTwo);
+
+            var div = document.createElement('div');
 
             var personTwo = document.createElement('p');
             var text1Two = document.createTextNode(roomTwoX);
@@ -93,7 +117,7 @@ function bookTwo() {
 
             div.appendChild(personTwo);
             div.appendChild(dateTwo);
-            div.setAttribute("id", roomTwoX);
+            div.setAttribute("id", fixedIdTwo);
             document.getElementById("placeTwo").appendChild(div);
             
             iTwo++;
@@ -121,9 +145,13 @@ function unlockTwo() {
 }
 
 function removeTwo() {
-    var twoY = document.getElementById('roomTwoEnter').value;
+    var trimmedRemoveTwo = (document.getElementById('roomTwoEnter').value).trim();
+    var twoY = trimmedRemoveTwo[0].toUpperCase() + trimmedRemoveTwo.substring(1);
+
+    var fixedIdRemoveTwo = (twoY.replaceAll(' ', '_')).toUpperCase();
+
     var twoE = document.getElementById("placeTwo");
-    twoE.querySelector("#" + twoY).remove();
+    twoE.querySelector("#" + fixedIdRemoveTwo).remove();
     iTwo--;
     document.getElementById("twoCounter").innerHTML = iTwo;
     document.getElementById('roomTwoEnter').value = "";
@@ -138,14 +166,18 @@ function removeAllTwo() {
 
 function bookThree() {
     if (iThree <= 3) {
-        var roomThreeX = document.getElementById('roomThreeEnter').value;
+        var trimmedThree = (document.getElementById('roomThreeEnter').value).trim();
+        var roomThreeX = trimmedThree[0].toUpperCase() + trimmedThree.substring(1);
+
+        var fixedIdThree = (roomThreeX.replaceAll(' ', '_')).toUpperCase();
         if (roomThreeX != "" && roomThreeX != " ") {
-            var div = document.createElement('div');
 
             var logsPThree = document.createElement('p');
             var logsNThree = document.createTextNode("Room Three: " + roomThreeX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPThree.appendChild(logsNThree);
             document.getElementById('logsContent').appendChild(logsPThree);
+
+            var div = document.createElement('div');
 
             var personThree = document.createElement('p');
             var text1Three = document.createTextNode(roomThreeX);
@@ -158,7 +190,7 @@ function bookThree() {
 
             div.appendChild(personThree);
             div.appendChild(dateThree);
-            div.setAttribute("id", roomThreeX);
+            div.setAttribute("id", fixedIdThree);
             document.getElementById("placeThree").appendChild(div);
             
             iThree++;
@@ -186,9 +218,13 @@ function unlockThree() {
 }
 
 function removeThree() {
-    var threeY = document.getElementById('roomThreeEnter').value;
+    var trimmedRemoveThree = (document.getElementById('roomThreeEnter').value).trim();
+    var threeY = trimmedRemoveThree[0].toUpperCase() + trimmedRemoveThree.substring(1);
+
+    var fixedIdRemoveThree = (threeY.replaceAll(' ', '_')).toUpperCase();
+
     var threeE = document.getElementById("placeThree");
-    threeE.querySelector("#" + threeY).remove();
+    threeE.querySelector("#" + fixedIdRemoveThree).remove();
     iThree--;
     document.getElementById("threeCounter").innerHTML = iThree;
     document.getElementById('roomThreeEnter').value = "";
@@ -203,14 +239,18 @@ function removeAllThree() {
 
 function bookFour() {
     if (iFour <= 3) {
-        var roomFourX = document.getElementById('roomFourEnter').value;
+        var trimmedFour = (document.getElementById('roomFourEnter').value).trim();
+        var roomFourX = trimmedFour[0].toUpperCase() + trimmedFour.substring(1);
+
+        var fixedIdFour = (roomFourX.replaceAll(' ', '_')).toUpperCase()
         if (roomFourX != "" && roomFourX != " ") {
-            var div = document.createElement('div');
 
             var logsPFour = document.createElement('p');
             var logsNFour = document.createTextNode("Room Four: " + roomFourX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPFour.appendChild(logsNFour);
             document.getElementById('logsContent').appendChild(logsPFour);
+
+            var div = document.createElement('div');
 
             var personFour = document.createElement('p');
             var text1Four = document.createTextNode(roomFourX);
@@ -223,7 +263,7 @@ function bookFour() {
 
             div.appendChild(personFour);
             div.appendChild(dateFour);
-            div.setAttribute("id", roomFourX);
+            div.setAttribute("id", fixedIdFour);
             document.getElementById("placeFour").appendChild(div);
             
             iFour++;
@@ -251,9 +291,13 @@ function unlockFour() {
 }
 
 function removeFour() {
-    var fourY = document.getElementById('roomFourEnter').value;
+    var trimmedRemoveFour = (document.getElementById('roomFourEnter').value).trim();
+    var fourY = trimmedRemoveFour[0].toUpperCase() + trimmedRemoveFour.substring(1);
+
+    var fixedIdRemoveFour = (fourY.replaceAll(' ', '_')).toUpperCase();
+
     var fourE = document.getElementById("placeFour");
-    fourE.querySelector("#" + fourY).remove();
+    fourE.querySelector("#" + fixedIdRemoveFour).remove();
     iFour--;
     document.getElementById("fourCounter").innerHTML = iFour;
     document.getElementById('roomFourEnter').value = "";
@@ -268,14 +312,18 @@ function removeAllFour() {
 
 function bookFive() {
     if (iFive <= 3) {
-        var roomFiveX = document.getElementById('roomFiveEnter').value;
+        var trimmedFive = (document.getElementById('roomFiveEnter').value).trim();
+        var roomFiveX = trimmedFive[0].toUpperCase() + trimmedFive.substring(1);
+
+        var fixedIdFive = (roomFiveX.replaceAll(' ', '_')).toUpperCase();
         if (roomFiveX != "" && roomFiveX != " ") {
-            var div = document.createElement('div');
 
             var logsPFive = document.createElement('p');
             var logsNFive = document.createTextNode("Room Five: " + roomFiveX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPFive.appendChild(logsNFive);
             document.getElementById('logsContent').appendChild(logsPFive);
+
+            var div = document.createElement('div');
 
             var personFive = document.createElement('p');
             var text1Five = document.createTextNode(roomFiveX);
@@ -288,7 +336,7 @@ function bookFive() {
 
             div.appendChild(personFive);
             div.appendChild(dateFive);
-            div.setAttribute("id", roomFiveX);
+            div.setAttribute("id", fixedIdFive);
             document.getElementById("placeFive").appendChild(div);
             
             iFive++;
@@ -316,9 +364,13 @@ function unlockFive() {
 }
 
 function removeFive() {
-    var fiveY = document.getElementById('roomFiveEnter').value;
+    var trimmedRemoveFive = (document.getElementById('roomFiveEnter').value).trim();
+    var fiveY = trimmedRemoveFive[0].toUpperCase() + trimmedRemoveFive.substring(1);
+
+    var fixedIdRemoveFive = (fiveY.replaceAll(' ', '_')).toUpperCase();
+
     var fiveE = document.getElementById("placeFive");
-    fiveE.querySelector("#" + fiveY).remove();
+    fiveE.querySelector("#" + fixedIdRemoveFive).remove();
     iFive--;
     document.getElementById("fiveCounter").innerHTML = iFive;
     document.getElementById('roomFiveEnter').value = "";
@@ -333,14 +385,18 @@ function removeAllFive() {
 
 function bookSix() {
     if (iSix <= 3) {
-        var roomSixX = document.getElementById('roomSixEnter').value;
+        var trimmedSix = (document.getElementById('roomSixEnter').value).trim();
+        var roomSixX = trimmedSix[0].toUpperCase() + trimmedSix.substring(1);
+
+        var fixedIdSix = (roomSixX.replaceAll(' ', '_')).toUpperCase();
         if (roomSixX != "" && roomSixX != " ") {
-            var div = document.createElement('div');
 
             var logsPSix = document.createElement('p');
             var logsNSix = document.createTextNode("Room Six: " + roomSixX + " " + (new Date().getMonth() + 1) + "/" + new Date().getDate() + "/" + new Date().getFullYear() + " (" + new Date().getHours() + ":" + new Date().getMinutes() +  ":" + new Date().getSeconds() + ")");
             logsPSix.appendChild(logsNSix);
             document.getElementById('logsContent').appendChild(logsPSix);
+
+            var div = document.createElement('div');
 
             var personSix = document.createElement('p');
             var text1Six = document.createTextNode(roomSixX);
@@ -353,7 +409,7 @@ function bookSix() {
 
             div.appendChild(personSix);
             div.appendChild(dateSix);
-            div.setAttribute("id", roomSixX);
+            div.setAttribute("id", fixedIdSix);
             document.getElementById("placeSix").appendChild(div);
             
             iSix++;
@@ -381,9 +437,13 @@ function unlockSix() {
 }
 
 function removeSix() {
-    var sixY = document.getElementById('roomSixEnter').value;
+    var trimmedRemoveSix = (document.getElementById('roomSixEnter').value).trim();
+    var sixY = trimmedRemoveSix[0].toUpperCase() + trimmedRemoveSix.substring(1);
+
+    var fixedIdRemoveSix = (sixY.replaceAll(' ', '_')).toUpperCase();
+
     var sixE = document.getElementById("placeSix");
-    sixE.querySelector("#" + sixY).remove();
+    sixE.querySelector("#" + fixedIdRemoveSix).remove();
     iSix--;
     document.getElementById("sixCounter").innerHTML = iSix;
     document.getElementById('roomSixEnter').value = "";
